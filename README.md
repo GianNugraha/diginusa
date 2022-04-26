@@ -3,7 +3,7 @@
 Langkah Instalasi :
 
 1. setelah berhasil di download, buat database dengan nama "diginusa",
-2. lalu buka terminal (smd/gitbash) *khusus windows,
+2. lalu buka terminal (cmd/gitbash) *khusus windows,
 3. di terminal, arahkan ke folder yang tadi di download (diginusa),
 4. kemudian jalankan perintah php artisan migrate,
 5. lalu jalankan juga perintah composer dump-autoload,
