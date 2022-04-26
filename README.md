@@ -11,9 +11,12 @@ Langkah Instalasi :
 7. terakhir, jalankan perintah php artisan serve untuk running aplikasi.
 
 
-NOTE : akun
-Admin :
+NOTE : 
+
+Akun Admin :
  + username = admin
  + password = admin
+
+Akun User :
  + username = user1
  + password = user1
