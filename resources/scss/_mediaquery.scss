@@ -1,0 +1,87 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    body{
+        background-color: white;
+    }
+    *{
+        font-size: 13.5px;
+    }
+    // navbar dashboard insaf
+    .navbar-dashboard {
+        .logo {
+            border-radius: 0;
+        }
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body{
+        background-color: white;
+    }
+    *{
+        font-size: 13.5px;
+    }
+    // navbar dashboard insaf
+    .navbar-dashboard {
+        .logo {
+            border-radius: 0;
+        }
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1299px) {
+    body{
+        background-color: $color-4;
+    }
+    *{
+        font-size: 13.5px;
+    }
+    // navbar dashboard insaf
+    .navbar-dashboard {
+        .logo {
+            border-radius: 0;
+        }
+    }
+}
+
+/* // ipad large devices (large desktops or ipad pro, 1300px and up) */
+@media (min-width: 1300px) and (min-height: 1000px) {
+    body{
+        background-color: $color-4;
+    }
+    *{
+        font-size: 12px;
+    }
+}
+
+/* // Large devices (desktops, 1200 up px and up) */
+@media (min-width: 1290px) and (min-height: 700px)  {
+    body{
+        background-color: $color-4;
+    }
+    *{
+        font-size: 14px;
+    }
+}
+
+/* // Extra large devices (large desktops, 1920px and up) */
+@media (min-width: 1920px) and (max-width: 2300px) {
+    body{
+        background-color: $color-4;
+    }
+    *{
+        font-size: 14px;
+    }
+}
+
+/* ==============MY Laptop Size anehhhhhh====================== */
+@media (min-width: 1920px) and (min-height: 1080px) {
+    body{
+        background-color: $color-4;
+    }
+    *{
+        font-size: 18px;
+    }
+}

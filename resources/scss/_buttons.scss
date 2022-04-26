@@ -1,0 +1,959 @@
+@import "variables";
+
+/**
+.btn-outline-table-filter {
+    @apply focus:ring-2 ring-yellow-400 flex items-center p-2 w-11 h-11 hover:bg-yellow-300 focus:outline-none justify-center;
+    background-color: $color-1;
+    border-radius: 10px;
+}
+.btn-border- @apply flex
+    @apply flex items-center py-2 px-4 h-11 focus:outline-none justify-center;
+    border-radius: {
+    @apply flex}
+    color: white;
+.btn-table-add {
+    @apply focus:ring-4 ring-yellow-400 relative flex items-center justify-center p-0 mb-4 xl:mb-0 2xl:mb-0 focus:ring-2 ring-yellow-200;
+    border-radius: 10px;
+    background-color: $color-1;
+    .label {
+        border: 2px solid $color-1;
+        border-radius: 10px;
+        @apply focus:outline-none py-3 xl:py-1 2xl:py-1 px-4 flex justify-center items-center w-52 xl:w-auto 2xl:w-auto mr-12  font-medium;
+    }
+    .icon {
+        @apply absolute inset-y-0 right-0 p-3 w-10 xl:w-auto 2xl:w-auto flex justify-center items-center;
+        border-radius: 0 10px 10px 0;
+        background-color: black;
+        svg {
+            width: 70%;
+        }
+    }
+}
+.btn-search-date-range {
+    @apply bg-gray-900 text-white focus:outline-none rounded-lg p-2 focus:bg-gray-700 focus:ring-2 ring-gray-500;
+}
+.cta-edit-table {
+    @apply hover:bg-gray-800 w-10 h-10 focus:ring-2 ring-gray-400 flex items-center justify-center p-1 rounded-lg;
+    background-color: black;
+    color: white;
+    img {
+        width: 60%;
+    }
+}
+.cta-delete-table {
+    @apply hover:bg-rose-500 w-10 h-10 focus:ring-2 ring-rose-300 flex items-center justify-center p-1 rounded-lg;
+    background-color: #E8264F;
+    color: white;
+    img {
+        width: 60%;
+    }
+}
+**/
+
+// button solid ===============================================================================================
+
+
+// ==== BTN  NORMAL ===============================================================================================
+// btn primary
+.btn-primary {
+    @apply rounded-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 14px;
+    color: $color-text-light;
+    background-color: $color-bg-primary;
+    &:hover{
+        background-color: #2870c7;
+    };
+}
+// btn secondary
+.btn-secondary {
+    @apply rounded-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 14px;
+    color: $color-text-light;
+    background-color: $color-bg-secondary;
+    &:hover{
+        background-color: #5372E7;
+    }
+}
+// btn danger
+.btn-danger {
+    @apply rounded-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 14px;
+    color: $color-text-light;
+    background-color: $color-bg-danger;
+    &:hover{
+        background-color: #d61e1e;
+    }
+}
+// btn warning
+.btn-warning {
+    @apply rounded-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 14px;
+    color: $color-text-light;
+    background-color: $color-bg-warning;
+    &:hover{
+        background-color: #ec8804;
+    }
+}
+// btn success
+.btn-success {
+    @apply rounded-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 14px;
+    color: $color-text-light;
+    background-color: $color-bg-success;
+    &:hover{
+        background-color: #089b6d;
+    }
+}
+// btn dark
+.btn-dark {
+    @apply rounded-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 14px;
+    color: $color-text-light;
+    background-color: $color-bg-dark;
+    &:hover{
+        background-color: #000000;
+    }
+}
+// btn light
+.btn-light {
+    @apply rounded-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 14px;
+    color: $color-text-secondary;
+    background-color: $color-bg-light;
+    &:hover{
+        background-color: #f0eeee;
+    }
+}
+// btn disabled
+.btn-disabled {
+    @apply rounded-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 14px;
+    color: $color-text-light;
+    background-color: $color-bg-disabled;
+    &:hover{
+        background-color: #7e7a7a;
+    }
+}
+// ==== BTN  SM ===============================================================================================
+// btn primary
+.btn-sm-primary {
+    @apply rounded-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 12px;
+    color: $color-text-light;
+    background-color: $color-bg-primary;
+    &:hover{
+        background-color: #2870c7;
+    };
+}
+// btn secondary
+.btn-sm-secondary {
+    @apply rounded-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 12px;
+    color: $color-text-light;
+    background-color: $color-bg-secondary;
+    &:hover{
+        background-color: #5372E7;
+    }
+}
+// btn danger
+.btn-sm-danger {
+    @apply rounded-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 12px;
+    color: $color-text-light;
+    background-color: $color-bg-danger;
+    &:hover{
+        background-color: #d61e1e;
+    }
+}
+// btn warning
+.btn-sm-warning {
+    @apply rounded-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 12px;
+    color: $color-text-light;
+    background-color: $color-bg-warning;
+    &:hover{
+        background-color: #ec8804;
+    }
+}
+// btn success
+.btn-sm-success {
+    @apply rounded-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 12px;
+    color: $color-text-light;
+    background-color: $color-bg-success;
+    &:hover{
+        background-color: #089b6d;
+    }
+}
+// btn dark
+.btn-sm-dark {
+    @apply rounded-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 12px;
+    color: $color-text-light;
+    background-color: $color-bg-dark;
+    &:hover{
+        background-color: #000000;
+    }
+}
+// btn light
+.btn-sm-light {
+    @apply rounded-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 12px;
+    color: $color-text-secondary;
+    background-color: $color-bg-light;
+    &:hover{
+        background-color: #f0eeee;
+    }
+}
+// btn disabled
+.btn-sm-disabled {
+    @apply rounded-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 12px;
+    color: $color-text-light;
+    background-color: $color-bg-disabled;
+    &:hover{
+        background-color: #7e7a7a;
+    }
+}
+// ==== BTN LG ===============================================================================================
+// btn primary
+.btn-lg-primary {
+    @apply rounded-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 16px;
+    color: $color-text-light;
+    background-color: $color-bg-primary;
+    &:hover{
+        background-color: #2870c7;
+    };
+}
+// btn secondary
+.btn-lg-secondary {
+    @apply rounded-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 16px;
+    color: $color-text-light;
+    background-color: $color-bg-secondary;
+    &:hover{
+        background-color: #5372E7;
+    }
+}
+// btn danger
+.btn-lg-danger {
+    @apply rounded-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 16px;
+    color: $color-text-light;
+    background-color: $color-bg-danger;
+    &:hover{
+        background-color: #d61e1e;
+    }
+}
+// btn warning
+.btn-lg-warning {
+    @apply rounded-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 16px;
+    color: $color-text-light;
+    background-color: $color-bg-warning;
+    &:hover{
+        background-color: #ec8804;
+    }
+}
+// btn success
+.btn-lg-success {
+    @apply rounded-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 16px;
+    color: $color-text-light;
+    background-color: $color-bg-success;
+    &:hover{
+        background-color: #089b6d;
+    }
+}
+// btn dark
+.btn-lg-dark {
+    @apply rounded-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 16px;
+    color: $color-text-light;
+    background-color: $color-bg-dark;
+    &:hover{
+        background-color: #000000;
+    }
+}
+// btn light
+.btn-lg-light {
+    @apply rounded-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 16px;
+    color: $color-text-secondary;
+    background-color: $color-bg-light;
+    &:hover{
+        background-color: #f0eeee;
+    }
+}
+// btn disabled
+.btn-lg-disabled {
+    @apply rounded-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 16px;
+    color: $color-text-light;
+    background-color: $color-bg-disabled;
+    &:hover{
+        background-color: #7e7a7a;
+    }
+}
+
+
+// button outline ===============================================================================================
+
+
+// ==== BTN  NORMAL ===============================================================================================
+// btn primary
+.btn-outline-primary {
+    @apply rounded-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 14px;
+    color: $color-bg-primary;
+    border: 2px solid $color-bg-primary;
+    &:hover{
+        background-color: $color-bg-primary;
+        color: white;
+    };
+}
+// btn secondary
+.btn-outline-secondary {
+    @apply rounded-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 14px;
+    color: $color-bg-secondary;
+    border: 2px solid $color-bg-secondary;
+    &:hover{
+        background-color: $color-bg-secondary;
+        color: white;
+    }
+}
+// btn danger
+.btn-outline-danger {
+    @apply rounded-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 14px;
+    color: $color-bg-danger;
+    border: 2px solid $color-bg-danger;
+    &:hover{
+        background-color: $color-bg-danger;
+        color: white;
+    }
+}
+// btn warning
+.btn-outline-warning {
+    @apply rounded-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 14px;
+    color: $color-bg-warning;
+    border: 2px solid $color-bg-warning;
+    &:hover{
+        background-color: $color-bg-warning;
+        color: white;
+    }
+}
+// btn success
+.btn-outline-success {
+    @apply rounded-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 14px;
+    color: $color-bg-success;
+    border: 2px solid $color-bg-success;
+    &:hover{
+        background-color: $color-bg-success;
+        color: white;
+    }
+}
+// btn dark
+.btn-outline-dark {
+    @apply rounded-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 14px;
+    color: $color-bg-dark;
+    border: 2px solid $color-bg-dark;
+    &:hover{
+        background-color: $color-bg-dark;
+        color: white;
+    }
+}
+// btn light
+.btn-outline-light {
+    @apply rounded-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 14px;
+    color: $color-bg-light;
+    border: 2px solid $color-bg-light;
+    &:hover{
+        background-color: $color-bg-light;
+        color: white;
+    }
+}
+// btn disabled
+.btn-outline-disabled {
+    @apply rounded-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 14px;
+    color: $color-bg-disabled;
+    border: 2px solid $color-bg-disabled;
+    &:hover{
+        background-color: $color-bg-disabled;
+        color: white;
+    }
+}
+// ==== BTN  SM ===============================================================================================
+// btn primary
+.btn-outline-sm-primary {
+    @apply rounded-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 12px;
+    color: $color-bg-primary;
+    border: 2px solid $color-bg-primary;
+    &:hover{
+        background-color: $color-bg-primary;
+        color: white;
+    };
+}
+// btn secondary
+.btn-outline-sm-secondary {
+    @apply rounded-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 12px;
+    color: $color-bg-secondary;
+    border: 2px solid $color-bg-secondary;
+    &:hover{
+        background-color: $color-bg-secondary;
+        color: white;
+    }
+}
+// btn danger
+.btn-outline-sm-danger {
+    @apply rounded-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 12px;
+    color: $color-bg-danger;
+    border: 2px solid $color-bg-danger;
+    &:hover{
+        background-color: $color-bg-danger;
+        color: white;
+    }
+}
+// btn warning
+.btn-outline-sm-warning {
+    @apply rounded-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 12px;
+    color: $color-bg-warning;
+    border: 2px solid $color-bg-warning;
+    &:hover{
+        background-color: $color-bg-warning;
+        color: white;
+    }
+}
+// btn success
+.btn-outline-sm-success {
+    @apply rounded-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 12px;
+    color: $color-bg-success;
+    border: 2px solid $color-bg-success;
+    &:hover{
+        background-color: $color-bg-success;
+        color: white;
+    }
+}
+// btn dark
+.btn-outline-sm-dark {
+    @apply rounded-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 12px;
+    color: $color-bg-dark;
+    border: 2px solid $color-bg-dark;
+    &:hover{
+        background-color: $color-bg-dark;
+        color: white;
+    }
+}
+// btn light
+.btn-outline-sm-light {
+    @apply rounded-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 12px;
+    color: $color-bg-light;
+    border: 2px solid $color-bg-light;
+    &:hover{
+        background-color: $color-bg-light;
+        color: white;
+    }
+}
+// btn disabled
+.btn-outline-sm-disabled {
+    @apply rounded-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 12px;
+    color: $color-bg-disabled;
+    border: 2px solid $color-bg-disabled;
+    &:hover{
+        background-color: $color-bg-disabled;
+        color: white;
+    }
+}
+// ==== BTN LG ===============================================================================================
+// btn primary
+.btn-outline-lg-primary {
+    @apply rounded-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 16px;
+    color: $color-bg-primary;
+    border: 2px solid $color-bg-primary;
+    &:hover{
+        background-color: $color-bg-primary;
+        color: white;
+    };
+}
+// btn secondary
+.btn-outline-lg-secondary {
+    @apply rounded-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 16px;
+    color: $color-bg-secondary;
+    border: 2px solid $color-bg-secondary;
+    &:hover{
+        background-color: $color-bg-secondary;
+        color: white;
+    }
+}
+// btn danger
+.btn-outline-lg-danger {
+    @apply rounded-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 16px;
+    color: $color-bg-danger;
+    border: 2px solid $color-bg-danger;
+    &:hover{
+        background-color: $color-bg-danger;
+        color: white;
+    }
+}
+// btn warning
+.btn-outline-lg-warning {
+    @apply rounded-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 16px;
+    color: $color-bg-warning;
+    border: 2px solid $color-bg-warning;
+    &:hover{
+        background-color: $color-bg-warning;
+        color: white;
+    }
+}
+// btn success
+.btn-outline-lg-success {
+    @apply rounded-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 16px;
+    color: $color-bg-success;
+    border: 2px solid $color-bg-success;
+    &:hover{
+        background-color: $color-bg-success;
+        color: white;
+    }
+}
+// btn dark
+.btn-outline-lg-dark {
+    @apply rounded-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 16px;
+    color: $color-bg-dark;
+    border: 2px solid $color-bg-dark;
+    &:hover{
+        background-color: $color-bg-dark;
+        color: white;
+    }
+}
+// btn light
+.btn-outline-lg-light {
+    @apply rounded-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 16px;
+    color: $color-bg-light;
+    border: 2px solid $color-bg-light;
+    &:hover{
+        background-color: $color-bg-light;
+        color: white;
+    }
+}
+// btn disabled
+.btn-outline-lg-disabled {
+    @apply rounded-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold;
+    font-size: 16px;
+    color: $color-bg-disabled;
+    border: 2px solid $color-bg-disabled;
+    &:hover{
+        background-color: $color-bg-disabled;
+        color: white;
+    }
+}
+
+
+
+// button cap ===============================================================================================
+
+
+// ==== BTN  NORMAL ===============================================================================================
+// btn cap primary
+.btn-cap-primary {
+    @apply flex overflow-hidden items-center;
+    height: 45px;
+    .label-button {
+        @apply rounded-l-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold h-full;
+        font-size: 14px;
+        border: 2px solid $color-bg-primary;
+        background-color: $color-bg-light;
+        color: $color-text-primary;
+        &:hover{
+            background-color: $color-bg-primary;
+            color: white;
+        };
+    }
+    .cap-button {
+        @apply flex items-center justify-center rounded-r-md py-2 px-3 h-full;
+        background-color: $color-bg-primary;
+        color: $color-text-light;
+    }
+}
+// btn cap secondary
+.btn-cap-secondary {
+    @apply flex overflow-hidden items-center;
+    height: 45px;
+    .label-button {
+        @apply rounded-l-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold h-full;
+        font-size: 14px;
+        border: 2px solid $color-bg-secondary;
+        background-color: $color-bg-light;
+        color: $color-text-secondary;
+        &:hover{
+            background-color: $color-bg-secondary;
+            color: white;
+        };
+    }
+    .cap-button {
+        @apply flex items-center justify-center rounded-r-md py-2 px-3 h-full;
+        background-color: $color-bg-secondary;
+        color: $color-text-light;
+    }
+}
+// btn cap danger
+.btn-cap-danger {
+    @apply flex overflow-hidden items-center;
+    height: 45px;
+    .label-button {
+        @apply rounded-l-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold h-full;
+        font-size: 14px;
+        border: 2px solid $color-bg-danger;
+        background-color: $color-bg-light;
+        color: $color-text-danger;
+        &:hover{
+            background-color: $color-bg-danger;
+            color: white;
+        };
+    }
+    .cap-button {
+        @apply flex items-center justify-center rounded-r-md py-2 px-3 h-full;
+        background-color: $color-bg-danger;
+        color: $color-text-light;
+    }
+}
+// btn cap success
+.btn-cap-success {
+    @apply flex overflow-hidden items-center;
+    height: 45px;
+    .label-button {
+        @apply rounded-l-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold h-full;
+        font-size: 14px;
+        border: 2px solid $color-bg-success;
+        background-color: $color-bg-light;
+        color: $color-text-success;
+        &:hover{
+            background-color: $color-bg-success;
+            color: white;
+        };
+    }
+    .cap-button {
+        @apply flex items-center justify-center rounded-r-md py-2 px-3 h-full;
+        background-color: $color-bg-success;
+        color: $color-text-light;
+    }
+}
+// btn cap warning
+.btn-cap-warning {
+    @apply flex overflow-hidden items-center;
+    height: 45px;
+    .label-button {
+        @apply rounded-l-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold h-full;
+        font-size: 14px;
+        border: 2px solid $color-bg-warning;
+        background-color: $color-bg-light;
+        color: $color-text-warning;
+        &:hover{
+            background-color: $color-bg-warning;
+            color: white;
+        };
+    }
+    .cap-button {
+        @apply flex items-center justify-center rounded-r-md py-2 px-3 h-full;
+        background-color: $color-bg-warning;
+        color: $color-text-light;
+    }
+}
+// btn cap dark
+.btn-cap-dark {
+    @apply flex overflow-hidden items-center;
+    height: 45px;
+    .label-button {
+        @apply rounded-l-md px-4 py-3 flex items-center duration-100 justify-center space-x-3 font-semibold h-full;
+        font-size: 14px;
+        border: 2px solid $color-bg-dark;
+        background-color: $color-bg-light;
+        color: $color-text-dark;
+        &:hover{
+            background-color: $color-bg-dark;
+            color: white;
+        };
+    }
+    .cap-button {
+        @apply flex items-center justify-center rounded-r-md py-2 px-3 h-full;
+        background-color: $color-bg-dark;
+        color: $color-text-light;
+    }
+}
+
+// ==== BTN  SMALL ===============================================================================================
+// btn cap primary
+.btn-sm-cap-primary {
+    @apply flex overflow-hidden items-center;
+    height: 30px;
+    .label-button {
+        @apply rounded-l-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold h-full;
+        font-size: 12px;
+        border: 2px solid $color-bg-primary;
+        background-color: $color-bg-light;
+        color: $color-text-primary;
+        &:hover{
+            background-color: $color-bg-primary;
+            color: white;
+        };
+    }
+    .cap-button {
+        @apply flex items-center justify-center rounded-r-md py-2 px-3 h-full;
+        background-color: $color-bg-primary;
+        color: $color-text-light;
+    }
+}
+// btn cap secondary
+.btn-sm-cap-secondary {
+    @apply flex overflow-hidden items-center;
+    height: 30px;
+    .label-button {
+        @apply rounded-l-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold h-full;
+        font-size: 12px;
+        border: 2px solid $color-bg-secondary;
+        background-color: $color-bg-light;
+        color: $color-text-secondary;
+        &:hover{
+            background-color: $color-bg-secondary;
+            color: white;
+        };
+    }
+    .cap-button {
+        @apply flex items-center justify-center rounded-r-md py-2 px-3 h-full;
+        background-color: $color-bg-secondary;
+        color: $color-text-light;
+    }
+}
+// btn cap danger
+.btn-sm-cap-danger {
+    @apply flex overflow-hidden items-center;
+    height: 30px;
+    .label-button {
+        @apply rounded-l-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold h-full;
+        font-size: 12px;
+        border: 2px solid $color-bg-danger;
+        background-color: $color-bg-light;
+        color: $color-text-danger;
+        &:hover{
+            background-color: $color-bg-danger;
+            color: white;
+        };
+    }
+    .cap-button {
+        @apply flex items-center justify-center rounded-r-md py-2 px-3 h-full;
+        background-color: $color-bg-danger;
+        color: $color-text-light;
+    }
+}
+// btn cap success
+.btn-sm-cap-success {
+    @apply flex overflow-hidden items-center;
+    height: 30px;
+    .label-button {
+        @apply rounded-l-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold h-full;
+        font-size: 12px;
+        border: 2px solid $color-bg-success;
+        background-color: $color-bg-light;
+        color: $color-text-success;
+        &:hover{
+            background-color: $color-bg-success;
+            color: white;
+        };
+    }
+    .cap-button {
+        @apply flex items-center justify-center rounded-r-md py-2 px-3 h-full;
+        background-color: $color-bg-success;
+        color: $color-text-light;
+    }
+}
+// btn cap warning
+.btn-sm-cap-warning {
+    @apply flex overflow-hidden items-center;
+    height: 30px;
+    .label-button {
+        @apply rounded-l-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold h-full;
+        font-size: 12px;
+        border: 2px solid $color-bg-warning;
+        background-color: $color-bg-light;
+        color: $color-text-warning;
+        &:hover{
+            background-color: $color-bg-warning;
+            color: white;
+        };
+    }
+    .cap-button {
+        @apply flex items-center justify-center rounded-r-md py-2 px-3 h-full;
+        background-color: $color-bg-warning;
+        color: $color-text-light;
+    }
+}
+// btn cap dark
+.btn-sm-cap-dark {
+    @apply flex overflow-hidden items-center;
+    height: 30px;
+    .label-button {
+        @apply rounded-l-md px-3 py-2 flex items-center duration-100 justify-center space-x-3 font-semibold h-full;
+        font-size: 12px;
+        border: 2px solid $color-bg-dark;
+        background-color: $color-bg-light;
+        color: $color-text-dark;
+        &:hover{
+            background-color: $color-bg-dark;
+            color: white;
+        };
+    }
+    .cap-button {
+        @apply flex items-center justify-center rounded-r-md py-2 px-3 h-full;
+        background-color: $color-bg-dark;
+        color: $color-text-light;
+    }
+}
+
+// ==== BTN  LARGE ===============================================================================================
+// btn cap primary
+.btn-lg-cap-primary {
+    @apply flex overflow-hidden items-center;
+    height: 70px;
+    .label-button {
+        @apply rounded-l-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold h-full;
+        font-size: 16px;
+        border: 2px solid $color-bg-primary;
+        background-color: $color-bg-light;
+        color: $color-text-primary;
+        &:hover{
+            background-color: $color-bg-primary;
+            color: white;
+        };
+    }
+    .cap-button {
+        @apply flex items-center justify-center rounded-r-md py-2 px-3 h-full;
+        background-color: $color-bg-primary;
+        color: $color-text-light;
+    }
+}
+// btn cap secondary
+.btn-lg-cap-secondary {
+    @apply flex overflow-hidden items-center;
+    height: 70px;
+    .label-button {
+        @apply rounded-l-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold h-full;
+        font-size: 16px;
+        border: 2px solid $color-bg-secondary;
+        background-color: $color-bg-light;
+        color: $color-text-secondary;
+        &:hover{
+            background-color: $color-bg-secondary;
+            color: white;
+        };
+    }
+    .cap-button {
+        @apply flex items-center justify-center rounded-r-md py-2 px-3 h-full;
+        background-color: $color-bg-secondary;
+        color: $color-text-light;
+    }
+}
+// btn cap danger
+.btn-lg-cap-danger {
+    @apply flex overflow-hidden items-center;
+    height: 70px;
+    .label-button {
+        @apply rounded-l-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold h-full;
+        font-size: 16px;
+        border: 2px solid $color-bg-danger;
+        background-color: $color-bg-light;
+        color: $color-text-danger;
+        &:hover{
+            background-color: $color-bg-danger;
+            color: white;
+        };
+    }
+    .cap-button {
+        @apply flex items-center justify-center rounded-r-md py-2 px-3 h-full;
+        background-color: $color-bg-danger;
+        color: $color-text-light;
+    }
+}
+// btn cap success
+.btn-lg-cap-success {
+    @apply flex overflow-hidden items-center;
+    height: 70px;
+    .label-button {
+        @apply rounded-l-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold h-full;
+        font-size: 16px;
+        border: 2px solid $color-bg-success;
+        background-color: $color-bg-light;
+        color: $color-text-success;
+        &:hover{
+            background-color: $color-bg-success;
+            color: white;
+        };
+    }
+    .cap-button {
+        @apply flex items-center justify-center rounded-r-md py-2 px-3 h-full;
+        background-color: $color-bg-success;
+        color: $color-text-light;
+    }
+}
+// btn cap warning
+.btn-lg-cap-warning {
+    @apply flex overflow-hidden items-center;
+    height: 70px;
+    .label-button {
+        @apply rounded-l-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold h-full;
+        font-size: 16px;
+        border: 2px solid $color-bg-warning;
+        background-color: $color-bg-light;
+        color: $color-text-warning;
+        &:hover{
+            background-color: $color-bg-warning;
+            color: white;
+        };
+    }
+    .cap-button {
+        @apply flex items-center justify-center rounded-r-md py-2 px-3 h-full;
+        background-color: $color-bg-warning;
+        color: $color-text-light;
+    }
+}
+// btn cap dark
+.btn-lg-cap-dark {
+    @apply flex overflow-hidden items-center;
+    height: 70px;
+    .label-button {
+        @apply rounded-l-md px-5 py-5 flex items-center duration-100 justify-center space-x-3 font-semibold h-full;
+        font-size: 16px;
+        border: 2px solid $color-bg-dark;
+        background-color: $color-bg-light;
+        color: $color-text-dark;
+        &:hover{
+            background-color: $color-bg-dark;
+            color: white;
+        };
+    }
+    .cap-button {
+        @apply flex items-center justify-center rounded-r-md py-2 px-3 h-full;
+        background-color: $color-bg-dark;
+        color: $color-text-light;
+    }
+}

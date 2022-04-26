@@ -1,0 +1,35 @@
+@import "variables";
+
+.card {
+    &.card-light {
+        @apply bg-white;
+        // p, a, li, span, h1, h2, h3, h4, h5, h6, div  {
+        //     color: $color-text-dark !important;
+        // }
+    }
+    &.card-dark {
+        @apply bg-gray-900;
+        // p, a, li, span, h1, h2, h3, h4, h5, h6, div {
+        //     color: $color-text-light !important;
+        // }
+    }
+    @apply flex-1 shadow-sm overflow-hidden rounded-lg;
+    .card-header{
+        @apply flex flex-row items-center justify-between p-4;
+        .title-card-head {
+            @apply text-base font-semibold;
+        }
+        .cta-card-head {
+            @apply flex items-center justify-end space-x-3;
+            .item-cta-card-head {
+                @apply cursor-pointer p-1 hover:bg-gray-200 rounded-md;
+            }
+        }
+    }
+    .card-body{
+        @apply px-4 py-1;
+    }
+    .card-footer{
+        @apply flex items-center p-4;
+    }
+}
